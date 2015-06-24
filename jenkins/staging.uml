@@ -1,0 +1,32 @@
+@startuml
+hide footbox
+
+actor Developer
+participant Testing
+activate Developer
+activate DevEnvironment
+activate StageEnvironment
+actor BMW
+activate Production
+Developer->Testing : checkin
+deactivate Developer
+activate Testing
+Testing->DevEnvironment : dev deployment
+deactivate Testing
+activate Developer
+Developer->Testing : checkin
+deactivate Developer
+activate Testing
+Testing->DevEnvironment : dev deployment
+deactivate Testing
+== Let's prepare a Release ==
+DevEnvironment->StageEnvironment : stage deployment
+BMW -> StageEnvironment : testing
+activate BMW
+BMW -> StageEnvironment : testing
+BMW -> StageEnvironment : testing
+deactivate BMW
+== Everything is ready to go, let's do a release ==
+StageEnvironment->Production : deployment
+@enduml
+

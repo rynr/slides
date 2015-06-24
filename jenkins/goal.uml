@@ -1,0 +1,10 @@
+@startuml
+hide footbox
+
+actor Developer
+activate Developer
+activate Production
+Developer->Production : deployment
+deactivate Developer
+@enduml
+
