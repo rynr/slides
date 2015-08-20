@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Yukon</title>
+
+		<meta name="description" content="Canoe-tour along the Yukon">
+		<meta name="author" content="Rainer Jung">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>The Yukon</h2>
+					<h3>Whitehourse to Dawson City</h3>
+					<p><img src="https://maps.googleapis.com/maps/api/staticmap?center=62.37845995,-137.232501&zoom=6&size=600x400&maptype=roadmap&markers=color:red|label:W|60.6997545,-135.0845781&markers=color:green|label:D|64.0571654,-139.3804239" width="600" height="400"/><br/>736 km with the canoe</p>
+				</section>
+				<section>
+					<section>
+						<h3>A bit of history</h3>
+						<dl>
+							<dt>August 16 1896</dt>
+							<dd><img style="float: right" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Skookum_Jim_Mason.png"/><br/>Skookum Jim Mason and the Carmack-Family finds the first Gold in the Rabbit Creek (now called Bonanza Creek).<br/>Registers claim.</dd>
+						</dl>
+					</section>
+					<section>
+						<h3>A bit of history</h3>
+						<dl>
+							<dt>until the end of August 1896</dt>
+							<dd>The whole Creek is claimed by other goldseekers.<br/>Other creeks are searched for gold, in the later called Eldorado Creek a even bigger amount of gold is found.</dd>
+						</dl>
+					</section>
+					<section>
+						<h3>A bit of history</h3>
+						<dl>
+							<dt>arount christmas 1896</dt>
+							<dd><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Seattle_Post_Intelligencer_newspaper_front_page_for_July_17_1897_announcing_the_arrival_of_the_steamer_PORTLAND_in_Seattle_from_the_Klondike_gold_fields.png/345px-Seattle_Post_Intelligencer_newspaper_front_page_for_July_17_1897_announcing_the_arrival_of_the_steamer_PORTLAND_in_Seattle_from_the_Klondike_gold_fields.png"></dd>
+						</dl>
+					</section>
+					<section>
+						<h3>A bit of history</h3>
+						<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/ChilkootPass_steps.jpg"></p>
+					</section>
+				</section>
+				<section>
+					<h3>Whitehorse</h3>
+					<p><img src="https://maps.googleapis.com/maps/api/staticmap?center=60.72,-135.08&zoom=12&size=600x400"/></p>
+				</section>
+				<section>
+					<h3>Dawson City</h3>
+					<p><img src="https://maps.googleapis.com/maps/api/staticmap?center=64.06,-139.42&zoom=12&size=600x400"/></p>
+				</section>
+				<section>
+					<h3>Non-private images from:</h3>
+					<a href="https://de.wikipedia.org/wiki/Datei:Skookum_Jim_Mason.png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Skookum_Jim_Mason.png" height="100" width="100"/></a>
+					<a href="https://en.wikipedia.org/wiki/File:ChilkootPass_steps.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/ChilkootPass_steps.jpg" height="100" width="100"/></a>
+					<a href="https://en.wikipedia.org/wiki/File:Seattle_Post_Intelligencer_newspaper_front_page_for_July_17_1897_announcing_the_arrival_of_the_steamer_PORTLAND_in_Seattle_from_the_Klondike_gold_fields.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Seattle_Post_Intelligencer_newspaper_front_page_for_July_17_1897_announcing_the_arrival_of_the_steamer_PORTLAND_in_Seattle_from_the_Klondike_gold_fields.png/173px-Seattle_Post_Intelligencer_newspaper_front_page_for_July_17_1897_announcing_the_arrival_of_the_steamer_PORTLAND_in_Seattle_from_the_Klondike_gold_fields.png" height="100" width="100"/></a>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
